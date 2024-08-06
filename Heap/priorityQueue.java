@@ -1,4 +1,4 @@
-package PriorityQueue;
+package Heap;
 import java.util.*;
 public class priorityQueue {
  public static void main(String[] args) {
