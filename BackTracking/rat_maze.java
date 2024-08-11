@@ -1,4 +1,4 @@
-package maze_solver;
+package BackTracking;
 
 import java.util.*;
 public class rat_maze {
