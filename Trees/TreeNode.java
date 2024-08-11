@@ -1,20 +1,6 @@
 package Trees;
-import java.util.Scanner;
-class Node{
-    int value;
-        Node left;
-        Node right;
 
-        Node(int val){
-            this.value = val;
-            this.left = null;
-            this.right = null;
-        }
-}
-
-
-
-class TreeNode{
+public class TreeNode{
     Node root;
     public TreeNode(int val){
         this.root = new Node(val);
@@ -40,7 +26,7 @@ class TreeNode{
         // root = new Node(val);
         return;
     }
-    //Traversal - DFS
+    //Traversal - DFS --> Inorder, Preorder and PostOrder everything is similar
     public void inorder(Node root){
         if(root == null){
             return;
@@ -50,16 +36,4 @@ class TreeNode{
         inorder(root.right);
     }
 
-}
-
-public class TreeImplmentation{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        TreeNode tree = new TreeNode(1);
-        for(int i=0; i<7; i++){
-            tree.insert(tree.root, sc.nextInt());
-        }
-        tree.inorder(tree.root);
-        sc.close();
-    }
 }
